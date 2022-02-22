@@ -1,0 +1,222 @@
+{% extends 'web/base.html' %} 
+{% load static %}
+
+
+{% block content %}
+
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+  <!-- header area starts -->
+ 
+  {% include 'includes/header.html' %}
+
+  <!-- header area ends -->{% url 'web:index' %}
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Shop Details</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:shopgridright' %}">Shop List</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+
+  <!-- new arrival area starts -->
+  <div class="shop-details pt-120 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-12">
+          <div class="nav nav-tabs " id="approach-tabs" role="tablist">
+            <a class="product-thumb mb-15 active" id="nav-thumb1" data-toggle="tab" href="#nav-product1" role="tab"
+              aria-controls="nav-product1" aria-selected="true"><img src="{% static 'web/img/products/24.png' %}" alt="img"></a>
+            <a class="product-thumb mb-15" id="nav-thum2" data-toggle="tab" href="#nav-product2" role="tab"
+              aria-controls="nav-product2" aria-selected="false"><img src="{% static 'web/img/products/25.png' %}" alt="img"></a>
+            <a class="product-thumb" id="nav-thumb3" data-toggle="tab" href="#nav-product3" role="tab"
+              aria-controls="nav-product3" aria-selected="false"><img src="{% static 'web/img/products/26.png' %}" alt="img"></a>
+          </div>
+        </div>
+        <div class="col-xl-11 col-lg-11 col-md-10 col-sm-12">
+          <div class="product-wrapper d-flex">
+            <div class="product-imges tab-content" id="nav-tabContents">
+              <div class="tab-pane product-img  active " id="nav-product1" role="tabpanel" aria-labelledby="nav-thumb1">
+                <img src="{% static 'web/img/products/27.png' %}" alt="img">
+              </div>
+              <div class="tab-pane product-img " id="nav-product2" role="tabpanel" aria-labelledby="nav-thum2">
+                <img src="{% static 'web/img/products/32.png' %}" alt="img">
+              </div>
+              <div class="tab-pane product-img" id="nav-product3" role="tabpanel" aria-labelledby="nav-thumb3">
+                <img src="{% static 'web/img/products/33.png' %}" alt="img">
+              </div>
+            </div>
+            <div class="product-details ml-50">
+              <h5>Yellow Bag Women 2018</h5>
+              <ul class="rating d-inline-block mr-20">
+                <li><i class="las la-star"></i></li>
+                <li><i class="las la-star"></i></li>
+                <li><i class="las la-star"></i></li>
+                <li><i class="las la-star"></i></li>
+                <li><i class="las la-star"></i></li>
+              </ul>
+              <span>03 Customer Review</span>
+              <div class="price pt-15 pb-10">
+                <span>$42.00</span>
+              </div>
+              <p class="pr-110">Sed id interdum urna. Nam ac elit a ante commodo tristique. tum vehicula a hendrerit ac
+                nisi. hendrerit
+                ac nisi Lorem ipsum dolor sit perdiet nibh vel magna lacinia ultrices. Sed id interdum urna.</p>
+              <div class="product-color pt-10 d-flex">
+                <h6>SELECT COLOR</h6>
+                <div class="color-code pl-20">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="product-size d-flex pt-10">
+                <h6>SELECT SIZE</h6>
+                <ul class="ml-50">
+                  <li class="active">Xl </li>
+                  <li>L</li>
+                  <li>M</li>
+                  <li>S</li>
+                  <li>XS</li>
+                </ul>
+              </div>
+              <div class="product-count d-flex mt-25">
+                <div class="quty mr-20">
+                  <input class="qty" type="number" value="1">
+                </div>
+                <div class="add-tocart mr-20 mt-15 mt-sm-0">
+                  <a class="p-btn position-relative" href="">
+                    <span>Add to cart</span>
+                  </a>
+                </div>
+                <ul class="share d-flex align-items-center mt-15 mt-sm-0">
+                  <li><a href="{% url 'web:wishlist' %}"><i class="las la-heart"></i></a></li>
+                  <li><a href=""><i class="las la-random"></i></a></li>
+                </ul>
+              </div>
+              <ul class="social-icon pt-80">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <hr class="pt-75">
+    </div>
+  </div>
+  
+  <div class="description-area pt-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="description-tab ">
+                    <nav>
+                      <div class="nav nav-tabs justify-content-center" id="approach-tab" role="tablist">
+                        <a class="nav-item active mr-75" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="true">Description</a>
+                        <a class="nav-item mr-75" id="nav-comment-tab" data-toggle="tab" href="#nav-comment" role="tab" aria-controls="nav-comment" aria-selected="false">Addtional info</a>
+                        <a class="nav-item" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Reviews (2)</a>
+                      </div>
+                    </nav>
+                    <div class="tab-content mt-55 ml-100" id="nav-tabContent">
+                      <div class="tab-pane active " id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
+                        <div class="row">
+                          <div class="col-xl-8 col-lg-8 col-md-8">
+                            <div class="description-text position-relative">
+                              <p class="mb-25">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestib lum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna</p>
+                              <p>Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus plac erat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condim entum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet.</p>
+                            </div>
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 pl-md-0 pr-md-0">
+                            <div class="description-size pt-5">
+                              <h6>SIZE & FIT</h6>
+                              <ul>
+                                <li>Our Model wears a UK 8/ EU 36/ Us 4</li>
+                                <li>Model is 170/ 5’7” Tall</li>
+                                <li>Shoulder seam to hem measures appox 58”/ 147 cm in lengh</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="nav-comment" role="tabpanel" aria-labelledby="nav-comment-tab">
+                        <div class="row">
+                          <div class="col-xl-8 col-lg-8 col-md-8">
+                            <div class="description-text position-relative">
+                              <p class="mb-25">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestib lum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna</p>
+                              <p>Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus plac erat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condim entum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet.</p>
+                            </div>
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 pl-md-0 pr-md-0">
+                            <div class="description-size pt-5">
+                              <h6>SIZE & FIT</h6>
+                              <ul>
+                                <li>Our Model wears a UK 8/ EU 36/ Us 4</li>
+                                <li>Model is 170/ 5’7” Tall</li>
+                                <li>Shoulder seam to hem measures appox 58”/ 147 cm in lengh</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+                        <div class="row">
+                          <div class="col-xl-8 col-lg-8 col-md-8 position-relative">
+                            <div class="description-text position-relative">
+                              <p class="mb-25">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestib lum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna</p>
+                              <p>Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus plac erat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condim entum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet.</p>
+                            </div>
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 pl-md-0 pr-md-0">
+                            <div class="description-size pt-5">
+                              <h6>SIZE & FIT</h6>
+                              <ul>
+                                <li>Our Model wears a UK 8/ EU 36/ Us 4</li>
+                                <li>Model is 170/ 5’7” Tall</li>
+                                <li>Shoulder seam to hem measures appox 58”/ 147 cm in lengh</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- new arrival area ends -->
+
+
+  <!-- Footer Area Starts -->
+  {% endblock %}

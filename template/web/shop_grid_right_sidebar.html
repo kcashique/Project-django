@@ -1,0 +1,661 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+
+  <!-- header area starts -->
+
+  {% include 'includes/header.html' %}
+
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Shop Sidebar</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:shopgridright' %}">Shop Grid Right Sidebar</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+
+  <!-- new arrival area starts -->
+  <div class="shop-grid-s shop-grid-rs pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-12">
+          <div class="new-arrival shop-grid ">
+            <div class="container pl-0 pr-0">
+              <div class="arrival-product new-arrival-2">
+                <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat4">
+                    <div class="arrival-items arrival-new-items text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/01.png' %}" alt="bag">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Green Hand Bag</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price">
+                          <span>$219.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat3 cat2">
+                    <div class="arrival-items text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/2.png' %}" alt="bag">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Green Hand Bag</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10 ">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat4 cat2">
+                    <div class="arrival-items text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/3.png' %}" alt="Leader Shoes">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Leader Shoes</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat3 cat4">
+                    <div class="arrival-items text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/4.png' %}" alt="bag">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">VRBox Tech</a></h5>
+
+                        <div class="price">
+                          <span>$219.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat2">
+                    <div class="arrival-items arrival-new-items arrival-sold-item text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/6.png' %}" alt="Leader Shoes">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Decorative Plant Pot</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat3">
+                    <div class="arrival-items text-center mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/5.png' %}" alt="bag">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Kitty Head Set</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10 ">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat4">
+                    <div class="arrival-items arrival-new-items  mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/15.png' %}" alt="bag">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Green Hand Bag</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price">
+                          <span>$219.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4  col-lg-6 col-md-6 col-sm-6 grid-item  cat3 cat2">
+                    <div class="arrival-items  mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/16.png' %}" alt="Veranda Chair">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Veranda Chair</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10 ">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item  cat4 cat2">
+                    <div class="arrival-items  mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/17.png' %}" alt="Wooden Rings">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Wooden Rings</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item  cat3 cat4">
+                    <div class="arrival-items mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/18.png' %}" alt="Leather Bag">
+                      </div>
+                      <div class="arrival-details arrival-details-variation position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Wooden Rings</a></h5>
+
+                        <div class="price ">
+                          <span>$219.00</span>
+                          <div class="color-code float-right">
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item   cat1 cat3">
+                    <div class="arrival-items mb-55">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/19.png' %}" alt="Bronze Vase">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Bronze Vase</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10 ">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item  cat1 cat2">
+                    <div class="arrival-items arrival-new-items arrival-sold-item ">
+                      <div class="arrival-img">
+                        <img src="{% static 'web/img/products/21.png' %}" alt="Women’s Trouser">
+                      </div>
+                      <div class="arrival-details position-relative pt-25">
+                        <h5><a href="{% url 'web:shopdetalis' %}">Blue Female Shoes</a></h5>
+                        <ul class="rating">
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                          <li><i class="las la-star"></i></li>
+                        </ul>
+                        <div class="price price1">
+                          <del>$219.00</del>
+                          <span class="ml-10">$189.00</span>
+                        </div>
+                        <div class="buy-info">
+                          <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To
+                            Cart</a>
+                          <ul class="wishlist text-right">
+                            <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                            <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="view-items ml-auto mr-auto mt-0">
+                  <a class="p-btn position-relative" href="{% url 'web:shopgrid' %}">
+                    <span>Load more</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 pt-80 pt-lg-0 d-none d-lg-inline-block">
+          <div class="sidebar-widget ">
+            <div class="categorie ">
+              <h4>All Categories</h4>
+              <ul class="categories-list pt-10 pl-20 pb-65">
+                <li><a href="{% url 'web:shopgrid' %}">All Items</a></li>
+                <li><a href="{% url 'web:shopgrid' %}">Furnitures </a></li>
+                <li><a href="{% url 'web:shopgrid' %}">Kitchen Wares </a></li>
+                <li><a href="{% url 'web:shopgrid' %}">Decors</a></li>
+                <li><a href="{% url 'web:shopgrid' %}">Interior Designs </a></li>
+                <li><a href="{% url 'web:shopgrid' %}">Others</a></li>
+              </ul>
+              <div class="more-categories pl-20 pt-10 pb-15">
+                <a href="{% url 'web:shopgrid' %}">+ More Categories</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-widget pb-25 mt-50">
+            <div class="categorie ">
+              <h4>Filter Products</h4>
+              <div class="input-range pb-30 position-relative pl-20 pt-15 mr-20">
+                <span>Price</span>
+                <div class="price-range-block position-relative pt-30">
+
+                  <div id="slider-range" class="price-filter-range"></div>
+
+                  <div class="price-value mt-20 d-flex">
+                    <input type="text" oninput="validity.valid||(value='1000');" id="min_price"
+                      class="price-range-field" />
+                    <input type="text" oninput="validity.valid||(value='8000');" id="max_price"
+                      class="price-range-field text-right" />
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="size pt-20 pl-20">
+              <span>Size</span>
+              <ul class="size-item mt-15 position-relative">
+                <li><a href="#">Chose Size <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="sub-size-option position-absolute">
+                    <li><a href="#">28</a></li>
+                    <li><a href="#">32</a></li>
+                    <li><a href="#">34</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="color-cat pl-20 pt-15">
+              <span>Color</span>
+              <ul class="color-option position-relative mt-15">
+                <li><a href="#">Chose Color <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="sub-color text-left pl-20 position-absolute">
+                    <li><a href="#"><span></span> Black</a></li>
+                    <li><a href="#"><span></span> Red</a></li>
+                    <li><a href="#"><span></span> Blueviolet</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-button pl-20 pt-20 ">
+              <button>Filter</button>
+            </div>
+          </div>
+          <div class="product-on-sale pt-55">
+            <div class="container pl-0 pr-0">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="section-title pb-5">
+                    <h3>
+                      On-Sale Product
+                    </h3>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="on-sale-product-active mt-40">
+              <div class="single-product">
+                <div class="product-wrapper d-flex">
+                  <div class="product-img position-relative ">
+                    <img src="{% static 'web/img/products/22.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-wrapper mt-25 d-flex">
+                  <div class="product-img position-relative">
+                    <img src="{% static 'web/img/products/23.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product">
+                <div class="product-wrapper d-flex">
+                  <div class="product-img position-relative ">
+                    <img src="{% static 'web/img/products/22.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-wrapper mt-25 d-flex">
+                  <div class="product-img position-relative">
+                    <img src="{% static 'web/img/products/23.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product">
+                <div class="product-wrapper d-flex">
+                  <div class="product-img position-relative ">
+                    <img src="{% static 'web/img/products/22.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-wrapper mt-25 d-flex">
+                  <div class="product-img position-relative">
+                    <img src="{% static 'web/img/products/23.png' %}" alt="product">
+                    <div class="cart-icon">
+                      <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="product-details mt-10">
+                    <span>Shoes</span>
+                    <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                    <div class="price d-flex">
+                      <span>$999</span>
+                      <del>$899</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-popupList">
+    <div class="product-popup shop-details position-relative ">
+      <div class="close-popup">
+        <button>X</button>
+      </div>
+      <div class="product-img">
+        <img src="{% static 'web/img/products/01.png' %}" alt="img">
+      </div>
+      <div class="product-details ml-30 mt-20">
+        <h5>Yellow Bag Women 2018</h5>
+        <ul class="rating d-inline-block mr-20">
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+        </ul>
+        <span>03 Customer Review</span>
+        <div class="price pt-15 pb-10">
+          <span>$42.00</span>
+        </div>
+        <p class="pr-110">Sed id interdum urna. Nam ac elit a ante commodo tristique. tum vehicula a
+          hendrerit ac
+          nisi. hendrerit
+          ac nisi Lorem ipsum dolor sit perdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
+        </p>
+        <div class="product-color pt-10 d-flex">
+          <h6>SELECT COLOR</h6>
+          <div class="color-code pl-20">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="product-size d-flex pt-10">
+          <h6>SELECT SIZE</h6>
+          <ul class="ml-50">
+            <li class="active">Xl </li>
+            <li>L</li>
+            <li>M</li>
+            <li>S</li>
+            <li>XS</li>
+          </ul>
+        </div>
+        <div class="product-count d-flex mt-25 mb-30">
+          <div class="quty mr-20">
+            <input class="qty" type="number" value="1">
+          </div>
+          <div class="add-tocart mr-20 mt-15 mt-sm-0">
+            <a class="p-btn position-relative" href="">
+              <span>Add to cart</span>
+            </a>
+          </div>
+          <ul class="share d-flex align-items-center mt-15 mt-sm-0">
+            <li><a href="{% url 'web:wishlist' %}"><i class="las la-heart"></i></a></li>
+            <li><a href=""><i class="las la-random"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- new arrival area ends -->
+
+
+  <!-- Footer Area Starts -->
+  {% endblock %}

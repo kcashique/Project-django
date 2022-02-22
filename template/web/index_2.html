@@ -1,0 +1,779 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+  <!-- auto-popup starts-->
+  <div id="autopopup-option" class="auto_popup position-fixed pt-100 pb-115">
+    <div id="close-button" class="position-absolute">
+      <button class="bg-transparent">X</button>
+    </div>
+    <h3 class=" pb-15">Get Discount 30% Off</h3>
+    <p>Get 20% discount with notified about the latest news and updates. No spam, we promise!
+    </p>
+    <form action="#" class="subscribe-area text-center pt-20">
+      <input type="email" placeholder="YOUR EMAIL">
+      <button>Subscribe</button>
+    </form>
+    <div class="checkbox text-center pt-35  position-relative">
+      <label for="checkbox"><input type="checkbox" id="checkbox">Don’st show this popup again</label>
+    </div>
+  </div>
+  <!-- auto_popup ends -->
+
+  <!-- header area starts -->
+
+  {% include 'includes/header.html' %}
+  
+  <!-- header area ends -->
+
+  <!-- slider area starts -->
+  <div class="slider-area slider-2 pt-105">
+    <div class="single-slide slider-height position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5  col-md-6">
+            <div class="slider-description mt-200">
+              <h1>Kitty go <br> Headset</h1>
+              <p class="pb-30">Lorem ipsum dolor sit
+                Amet, cons ectetur adip
+                Isicing elit, sed do eiusmo</p>
+              <a href="{% url 'web:shopgrid' %}" class="slider-btn position-relative">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="slider-images ">
+            <div class="slider-image-bg">
+              <img src="{% static 'web/img/slider-area/slider-2.png' %}" alt="headset">
+              <span class="slider-price-badge">
+                <span>$5.59</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-slide slider-height position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5  col-md-6">
+            <div class="slider-description mt-200">
+              <h1>Kitty go <br> Headset</h1>
+              <p class="pb-30">Lorem ipsum dolor sit
+                Amet, cons ectetur adip
+                Isicing elit, sed do eiusmo</p>
+              <a href="{% url 'web:shopgrid' %}" class="slider-btn position-relative">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="slider-images ">
+            <div class="slider-image-bg">
+              <img src="{% static 'web/img/slider-area/slider-2.png' %}" alt="headset">
+              <span class="slider-price-badge">
+                <span>$5.59</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-slide slider-height position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5  col-md-6">
+            <div class="slider-description mt-200">
+              <h1>Kitty go <br> Headset</h1>
+              <p class="pb-30">Lorem ipsum dolor sit
+                Amet, cons ectetur adip
+                Isicing elit, sed do eiusmo</p>
+              <a href="{% url 'web:shopgrid' %}" class="slider-btn position-relative">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="slider-images ">
+            <div class="slider-image-bg">
+              <img src="{% static 'web/img/slider-area/slider-2.png' %}" alt="headset">
+              <span class="slider-price-badge">
+                <span>$5.59</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-slide slider-height position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5  col-md-6">
+            <div class="slider-description mt-200">
+              <h1>Kitty go <br> Headset</h1>
+              <p class="pb-30">Lorem ipsum dolor sit
+                Amet, cons ectetur adip
+                Isicing elit, sed do eiusmo</p>
+              <a href="{% url 'web:shopgrid' %}" class="slider-btn position-relative">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="slider-images ">
+            <div class="slider-image-bg">
+              <img src="{% static 'web/img/slider-area/slider-2.png' %}" alt="headset">
+              <span class="slider-price-badge">
+                <span>$5.59</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- slider area ends -->
+  <!-- Service Area Start -->
+  <div class="service-area pt-85 pl-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="service-widget d-flex justify-content-center justify-content-md-start mb-30 mb-md-0">
+            <div class="service-img mr-20">
+              <img src="{% static 'web/img/icon/icon1.png' %}" alt="icon">
+            </div>
+            <div class="service-details">
+              <h5>Ultra Fast Delivery</h5>
+              <span>Within 48 hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="service-widget d-flex justify-content-center justify-content-md-start mb-30 mb-md-0">
+            <div class="service-img mr-20">
+              <img src="{% static 'web/img/icon/icon2.png' %}" alt="icon">
+            </div>
+            <div class="service-details">
+              <h5>Cash on Delivery</h5>
+              <span>All over the country</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="service-widget justify-content-center justify-content-lg-start d-flex">
+            <div class="service-img mr-20">
+              <img src="{% static 'web/img/icon/icon3.png' %}" alt="icon">
+            </div>
+            <div class="service-details">
+              <h5>Global Service</h5>
+              <span>500+ Satisfied Customers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service Area Ends -->
+  <!-- Category Area Start  -->
+  <div class="category-area  pt-110">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden mb-30 mb-lg-0 pt-15 pb-20">
+            <div class="category-img  ">
+              <img src="{% static 'web/img/products/7.png' %}" alt="bag">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Bags</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden mb-30 mb-lg-0 pt-15 pb-20">
+            <div class="category-img  ">
+              <img src="{% static 'web/img/products/8.png' %}" alt="Shoes">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Shoes</a></h6>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden pt-15 pb-20 mb-30 mb-sm-0">
+            <div class="category-img ">
+              <img src="{% static 'web/img/products/9.png' %}" alt="Furnitures">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Furnitures</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden pt-15 pb-20">
+            <div class="category-img">
+              <img src="{% static 'web/img/products/10.png' %}" alt="Electronics">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Electronics</a></h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="pt-25"></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden mb-30 mb-lg-0 pt-15 pb-20">
+            <div class="category-img">
+              <img src="{% static 'web/img/products/11.png' %}" alt="bag">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Kitchen Items</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden mb-30 mb-lg-0 pt-15 pb-20">
+            <div class="category-img">
+              <img src="{% static 'web/img/products/12.png' %}" alt="Shoes">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">Cosmetics</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="category-items overflow-hidden pt-15 pb-20">
+            <div class="category-img ">
+              <img src="{% static 'web/img/products/13.png' %}" alt="Furnitures">
+            </div>
+            <div class="product-name text-center pt-30">
+              <h6><a href="{% url 'web:shopgrid' %}">House Decor</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+          <div class=" more-items  mt-30 mt-sm-0 ">
+            <div class="category-img position-relative text-center">
+              <img src="{% static 'web/img/products/14.png' %}" alt="Electronics">
+              <a href="{% url 'web:shopgrid' %}">MORE</a>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Category Area Ends -->
+
+  <!-- new arrival area starts -->
+  <div class="new-arrival new-arrival-2 pt-110  pl-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-5 col-md-7">
+          <div class="section-title ">
+            <h2>latest products</h2>
+            <p class="pr-125">Subscribe to our newsleter and stay up to date with
+              latest offers and upcoming trends.</p>
+          </div>
+          <div class="arrival-text">
+
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-12">
+          <div class="arrival-menu text-center pt-20">
+            <button class="abtn" data-filter="*">All</button>
+            <button class="abtn" data-filter=".cat1">Furniture</button>
+            <button class="abtn" data-filter=".cat2">Electronics</button>
+            <button class="abtn" data-filter=".cat3">Household</button>
+            <button class="abtn" data-filter=".cat4">Decor</button>
+          </div>
+        </div>
+      </div>
+      <div class="arrival-product pt-45">
+        <div class="row grid">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item pr-0 cat1 cat4">
+            <div class="arrival-items arrival-new-items  mb-55">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/15.png' %}" alt="bag">
+              </div>
+              <div class="arrival-details position-relative pt-25">
+                <h5><a href="{% url 'web:shopdetalis' %}">Green Hand Bag</a></h5>
+                <ul class="rating">
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                </ul>
+                <div class="price">
+                  <span>$219.00</span>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3  col-lg-4 col-md-6 col-sm-6 grid-item mr-150 ml-140 cat3 cat2">
+            <div class="arrival-items  mb-55">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/16.png' %}" alt="Veranda Chair">
+              </div>
+              <div class="arrival-details position-relative pt-25">
+                <h5><a href="{% url 'web:shopdetalis' %}">Veranda Chair</a></h5>
+                <ul class="rating">
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                </ul>
+                <div class="price price1">
+                  <del>$219.00</del>
+                  <span class="ml-10 ">$189.00</span>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 pr-30 col-lg-4 col-md-6 col-sm-6 grid-item pl-0 cat4 cat2">
+            <div class="arrival-items  mb-55">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/17.png' %}" alt="Wooden Rings">
+              </div>
+              <div class="arrival-details position-relative pt-25">
+                <h5><a href="{% url 'web:shopdetalis' %}">Wooden Rings</a></h5>
+                <ul class="rating">
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                </ul>
+                <div class="price price1">
+                  <del>$219.00</del>
+                  <span class="ml-10">$189.00</span>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item pr-0 cat3 cat4">
+            <div class="arrival-items mb-55">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/18.png' %}" alt="Leather Bag">
+              </div>
+              <div class="arrival-details arrival-details-variation position-relative pt-25">
+                <h5><a href="{% url 'web:shopgrid' %}">Leather Bag</a></h5>
+
+                <div class="price ">
+                  <span>$219.00</span>
+                  <div class="color-code float-right">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item  mr-150 ml-140 cat1 cat3">
+            <div class="arrival-items arrival-items2 mb-55">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/19.png' %}" alt="Bronze Vase">
+              </div>
+              <div class="arrival-details position-relative pt-25">
+                <h5><a href="{% url 'web:shopdetalis' %}">Bronze Vase</a></h5>
+                <ul class="rating">
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                </ul>
+                <div class="price price1">
+                  <del>$219.00</del>
+                  <span class="ml-10 ">$189.00</span>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item  pr-30 pl-0 cat1 cat2">
+            <div class="arrival-items arrival-new-items arrival-sold-item ">
+              <div class="arrival-img">
+                <img src="{% static 'web/img/products/20.png' %}" alt="Women’s Trouser">
+              </div>
+              <div class="arrival-details position-relative pt-25">
+                <h5><a href="{% url 'web:shopgrid' %}">Women’s Trouser</a></h5>
+                <ul class="rating">
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                  <li><i class="las la-star"></i></li>
+                </ul>
+                <div class="price price1">
+                  <del>$219.00</del>
+                  <span class="ml-10">$189.00</span>
+                </div>
+                <div class="buy-info">
+                  <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>
+                  <ul class="wishlist text-right">
+                    <li> <a href="{% url 'web:wishlist' %}"><i class="lar la-heart"></i></a></li>
+                    <li><button class=" popbtn"><i class="fas fa-search-plus"></i></button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="view-items ml-auto mr-auto mt-50">
+          <a class="p-btn position-relative" href="{% url 'web:shopgrid' %}">
+            <span>Load more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-popupList product-popup2">
+    <div class="product-popup shop-details position-relative">
+      <div class="close-popup">
+        <button>X</button>
+      </div>
+      <div class="product-img">
+        <img src="{% static 'web/img/products/01.png' %}" alt="img">
+      </div>
+      <div class="product-details ml-30 mt-70">
+        <h5>Yellow Bag Women 2018</h5>
+        <ul class="rating d-inline-block mr-20">
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+          <li><i class="las la-star"></i></li>
+        </ul>
+        <span>03 Customer Review</span>
+        <div class="price pt-15 pb-10">
+          <span>$42.00</span>
+        </div>
+        <p class="pr-110">Sed id interdum urna. Nam ac elit a ante commodo tristique. tum vehicula a
+          hendrerit ac
+          nisi. hendrerit
+          ac nisi Lorem ipsum dolor sit perdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
+        </p>
+        <div class="product-color pt-10 d-flex">
+          <h6>SELECT COLOR</h6>
+          <div class="color-code pl-20">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="product-size d-flex pt-10">
+          <h6>SELECT SIZE</h6>
+          <ul class="ml-50">
+            <li class="active">Xl </li>
+            <li>L</li>
+            <li>M</li>
+            <li>S</li>
+            <li>XS</li>
+          </ul>
+        </div>
+        <div class="product-count d-flex mt-25 mb-30">
+                <div class="quty mr-20">
+                  <input class="qty" type="number" value="1">
+                </div>
+          <div class="add-tocart mr-20 mt-15 mt-sm-0">
+            <a class="p-btn position-relative" href="">
+              <span>Add to cart</span>
+            </a>
+          </div>
+          <ul class="share d-flex align-items-center mt-15 mt-sm-0">
+            <li><a href="{% url 'web:wishlist' %}"><i class="las la-heart"></i></a></li>
+            <li><a href=""><i class="las la-random"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- new arrival area ends -->
+
+  <!-- Today Deal Area Start -->
+  <div class="today-deal today-deal-2 mt-115 pt-115 pb-115 pl-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12">
+          <div class="today-deal-img d-none d-md-block text-center position-relative pt-10">
+            <img src="{% static 'web/img/deals/2.png' %}" alt="product">
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+          <div class="deal-details  pt-80">
+            <span class="text-uppercase">20% OFF</span>
+            <div id="countdown" class="d-flex pb-15">
+              <div class="cd-box d-flex">
+                <div class="d-inline-block">
+                  <span class="numbers days">00</span>
+                  <span class="strings timeRefDays">Days</span>
+                </div>
+                <span class="colon ml-20 mr-20 mt-15">:</span>
+              </div>
+              <div class="cd-box d-flex">
+                <div>
+                  <span class="numbers hours">00</span>
+                  <span class="strings timeRefHours">Hours</span>
+                </div>
+                <span class="colon ml-20 mr-20 mt-15">:</span>
+              </div>
+              <div class="cd-box d-flex">
+                <div>
+                  <span class="numbers minutes">00</span>
+                  <span class="strings timeRefMinutes">Mins</span>
+                </div>
+                <span class="colon ml-20 mr-20 mt-15">:</span>
+              </div>
+              <div class="cd-box">
+                <div>
+                  <span class="numbers seconds">00</span>
+                  <span class="strings timeRefSeconds">Secs</span>
+                </div>
+              </div>
+
+            </div>
+            <span>Today's Deal</span>
+            <h2>Wooden Candle Holder</h2>
+            <div class="price pb-55">
+              <del class="mr-5">$142.00</del>
+              <span>$132.00</span>
+            </div>
+            <a class="p-btn position-relative" href="">
+              <span>Load more</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Today Deal Area Ends -->
+  <!-- Brand Area Start -->
+  <div class="brand-area pt-120">
+    <div class="container">
+      <div class="brand-active">
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/1.png' %}" alt="brand-logo">
+          </div>
+        </div>
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/2.png' %}" alt="brand-logo">
+          </div>
+        </div>
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/3.png' %}" alt="brand-logo">
+          </div>
+        </div>
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/4.png' %}" alt="brand-logo">
+          </div>
+        </div>
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/5.png' %}" alt="brand-logo">
+          </div>
+        </div>
+        <div class="single-brand">
+          <div class="brand-img">
+            <img src="{% static 'web/img/brand/3.png' %}" alt="brand-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Area Ends -->
+  <!-- News Area Start -->
+  <div class="news-area news-area-2 pl-30 pt-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 col-md-7">
+          <div class="section-title  pb-45">
+            <h2 class="text-uppercase">LATEST NEWS</h2>
+            <p class="pr-5">Subscribe to our newsleter and stay up to date with
+              latest offers and upcoming trends.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 ">
+          <div class="news-items mb-30 mb-md-0">
+            <div class="news-img">
+              <a href="{% url 'web:blog' %}"><img src="{% static 'web/img/blog/4.png' %}" alt="img1"></a>
+            </div>
+            <div class="news-details pt-20">
+              <div class="news-title pr-50">
+                <a href="{% url 'web:news' %}">Lorem Ipsum has been the industry
+                  sed do tempor tara</a>
+              </div>
+              <span class="d-block">Jan 21, 2021 By Admin</span>
+              <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 ml-30 mr-60 ">
+          <div class="news-items mb-30 mb-md-0">
+            <div class="news-img">
+              <a href="{% url 'web:blog' %}"><img src="{% static 'web/img/blog/5.png' %}" alt="img2"></a>
+            </div>
+            <div class="news-details pt-20">
+              <div class="news-title pr-50">
+                <a href="{% url 'web:news' %}">Lorem Ipsum has been the industry
+                  sed do tempor tara</a>
+              </div>
+              <span class="d-block">Jan 21, 2021 By Admin</span>
+              <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 pl-xl-0 pr-xl-0 ">
+          <div class="news-items">
+            <div class="news-img">
+              <a href="{% url 'web:blog' %}"><img src="{% static 'web/img/blog/6.png' %}" alt="img3"></a>
+            </div>
+            <div class="news-details pt-20">
+              <div class="news-title ">
+                <a href="{% url 'web:news' %}">Lorem Ipsum has been the industry
+                  sed do tempor tara</a>
+              </div>
+              <span class="d-block">Jan 21, 2021 By Admin</span>
+              <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Area Ends  -->
+
+  <!-- Subscribe Area Starts -->
+
+  <div class="subscribe-area subscribe-area-2 pt-115 pl-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="section-title ">
+            <h2 class="text-uppercase">stay connected</h2>
+          </div>
+          <p class="pr-120">Subscribe to our newsleter and stay up to date with
+            latest offers and upcoming trends.</p>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <form class="subscribe-form mt-40" action="#">
+            <input type="email" placeholder="Email Address">
+            <i class="las la-envelope"></i>
+            <button>SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scribe Area Ends -->
+
+  <!-- Instagram Area Starts -->
+  <div class="instagram-area instagram-area-2 pt-110 pb-120">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2 class="text-uppercase">Instagram shop</h2>
+        <span>@aruk_insta</span>
+      </div>
+    </div>
+    <div class="instagram-images d-flex pt-60">
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/5.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/6.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/7.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/8.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/9.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/10.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/11.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="insta-imgs position-relative">
+        <img src="{% static 'web/img/instagram/12.png' %}" alt="img">
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Instagram Area Ends -->
+
+  <!-- Footer Area Starts -->
+  
+
+  <!-- Footer Area Ends -->
+{% endblock %}

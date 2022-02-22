@@ -1,0 +1,196 @@
+{% extends 'web/base.html' %} 
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+  <!-- header area starts -->
+
+  {% include 'includes/header.html' %}
+  
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Checkout Page</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:checkout' %}">Checkout</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+  <!-- Checkout Area Start -->
+    <div class="checkout-area pt-115">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="checkout">
+              <p>Returning customer ?<a href="{% url 'web:checkout' %}"> Click here to login</a></p>
+              <p>Have a Coupon ? <a href="{% url 'web:wishlist' %}">Click here to enter your code</a></p>
+            </div>
+            <div class="bill-details pt-15">
+              <h6>Billing Details</h6>
+              <form action="#" class="bill-form pt-5">
+                <div class="country">
+                  <label for="country">country</label>
+                  <div class="country-select position-relative">
+                    <select name="countries" id="country">
+                      <option value="UK">United Kingdom(UK)</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="US">US</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="first-name pt-30">
+                      <label for="first-nem">First Name</label>
+                      <input type="text" id="first-nem">
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="last-name pt-30">
+                      <label for="last-nam">Last Name</label>
+                      <input type="text" id="last-nam">
+                    </div>
+                  </div>
+                </div>
+                <div class="company pt-30">
+                  <label for="company">Company Name</label>
+                  <input type="text" id="company">
+                </div>
+                <div class="address pt-30">
+                  <label for="addres">Address</label>
+                  <input type="text" id="addres">
+                </div>
+                <div class="city pt-30">
+                  <label for="cit">City/Town</label>
+                  <input type="text" id="cit">
+                </div>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="state pt-30">
+                      <label for="stat">Country/States</label>
+                      <div class="country-select position-relative">
+                        <select name="countries" id="stat">
+                          <option value="UK">United Kingdom(UK)</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="US">US</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="zip pt-30">
+                      <label for="zip-c">POSTCODE / ZIP</label>
+                      <input type="text" id="zip-c">
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="email pt-30">
+                      <label for="emai">Email</label>
+                      <input type="text" id="emai">
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="phone pt-30">
+                      <label for="pho">Phone</label>
+                      <input type="text" id="pho">
+                    </div>
+                  </div>
+                </div>
+                <div class="create-account position-relative pt-30">
+                  <input type="checkbox" id="c-account">
+                  <label for="c-account" class="ml-25">Create an account?</label>
+                </div>
+                <div class="account-pass pt-30">
+                  <label for="pss">ACCOUNT PASSWORD</label>
+                  <input type="password" id="pss">
+                </div>
+                <div class="order-note pt-30">
+                  <label for="note">Order Note</label>
+                  <textarea  id="note" cols="30" rows="10"></textarea>
+                </div>
+                <div class="ship create-account position-relative pt-30">
+                  <input id="shi" type="checkbox">
+                  <label for="shi" class="ml-25">Ship to another address</label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="product-order pl-50 pr-50 pt-35 pb-55 mt-50 mt-md-0">
+              <h6 class="text-center pb-10">Your Order</h6>
+              <span>Products</span>
+              <ul>
+                <li>Cum sociis natoque <span class="float-right">$14.00</span></li>
+                <li>Habitant morbi tristique<span class="float-right">$28.00</span></li>
+                <li>Aenean ultricies<span class="float-right">$24.00</span></li>
+              </ul>
+              <hr class="mt-5">
+              <p class="pt-15">Sub Total <span class="float-right">$68.00</span></p>
+              <hr>
+              <p class="pt-15">Shipping <span class="float-right">$0</span></p>
+              <hr>
+              <p class="price-total pt-15">Total <span class="float-right">$68.00</span></p>
+              <div class="payment-method mt-55">
+                <div class="direct-bank position-relative pl-25">
+                  <input type="radio" id="rad" name="payment">
+                  <span class="check-mark"></span>
+                  <label for="rad">Direct bank transfer</label>
+                  <p class="pr-65">Aenean id ullamcorper libero. Vestibulum imperdiet nibh. Lorem  ullamcorper volutpat. Vestibulum lacinia risus. Etiam sagittis </p>
+                  
+                </div>
+                <div class="Cheque position-relative pl-25 mt-20">
+                  <input type="radio" id="Chequ" name="payment">
+                  <span class="check-mark"></span>
+                  <label for="Chequ" >Cheque Payment
+                    
+                  </label>
+                  
+                </div>
+                <div class="payment-card position-relative pl-25 mt-15">
+                  <input type="radio"  id="card" name="payment">
+                  <span class="check-mark"></span>
+                  <label for="card">
+                    <span><i class="fab fa-cc-mastercard"></i></span>
+                    <span><i class="fab fa-cc-visa"></i></span>
+                    <span><i class="fab fa-paypal"></i></span>
+                    <span><i class="fab fa-cc-discover"></i></span>
+                  </label>
+                </div>
+                <button class="p-btn border-0 mt-45">PLACE ORDER</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Checkout Area Ends -->
+  <!-- Footer Area Starts -->
+  {% endblock %}

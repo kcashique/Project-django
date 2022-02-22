@@ -1,0 +1,171 @@
+  {% extends 'web/base.html' %}
+  {% load static %}
+
+  
+  {% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+
+  <!-- header area starts -->
+  
+  {% include 'includes/header.html' %}
+  
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Wishlist</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:wishlist' %}">Wishlist</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+  <!-- wishlist Area Start -->
+  <div class="wishlist-area shop-list pt-105">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="cart-table table-responsive">
+            <table class="table table-bordered">
+              <thead class="wishlist-head">
+                <tr>
+                  <th scope="col"><span>PRODUCT NAME</span></th>
+                  <th scope="col"><span>UNIT PRICE</span> <span class="d-none">ALL DETAILS</span></th>
+                  <th scope="col"><span>STOCK STATUS</span></th>       
+                </tr>
+              </thead>
+              <tbody class="wishlist-body">
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <div class="cart-img">
+                        <img src="{% static 'web/img/products/28.png' %}" alt="product">
+                      </div>
+                      <div class="product-name mt-auto mb-auto ml-30">
+                        <h6><a href="{% url 'web:shopdetalis' %}">Leather shoes</a></h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td >
+                    <div class="product-price ">
+                      <span>$42.00</span>
+                      <div class="cart-mobile-content d-none">
+                        <span>In Stock</span>
+                        <div class="cart-button text-center float-right mt-10">
+                          <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                          <button class="mt-15 mt-lg-0">X</button>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="stock-detalis">
+                      <span>In Stock</span>
+                      <div class="cart-button text-center float-right">
+                        <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                        <button class="mt-15 mt-lg-0">X</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <div class="cart-img">
+                        <img src="{% static 'web/img/products/29.png' %}" alt="product">
+                      </div>
+                      <div class="product-name mt-auto mb-auto ml-30">
+                        <h6><a href="{% url 'web:shopdetalis' %}">Kitty gaming headset</a></h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td >
+                    <div class="product-price ">
+                      <span>$29.00</span>
+                      <div class="cart-mobile-content d-none">
+                        <span>In Stock</span>
+                        <div class="cart-button text-center float-right mt-10">
+                          <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                          <button class="mt-15 mt-lg-0">X</button>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="stock-detalis">
+                      <span>In Stock</span>
+                      <div class="cart-button text-center float-right">
+                        <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                        <button class="mt-15 mt-lg-0">X</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <div class="cart-img">
+                        <img src="{% static 'web/img/products/30.png' %}" alt="product">
+                      </div>
+                      <div class="product-name mt-auto mb-auto ml-30">
+                        <h6><a href="{% url 'web:shopdetalis' %}">Bronze flower vase</a></h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td >
+                    <div class="product-price ">
+                      <span>$18.00</span>
+                      <div class="cart-mobile-content d-none">
+                        <span>In Stock</span>
+                        <div class="cart-button text-center float-right mt-10">
+                          <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                          <button class="mt-15 mt-lg-0">X</button>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="stock-detalis">
+                      <span>In Stock</span>
+                      <div class="cart-button text-center float-right">
+                        <a href="{% url 'web:shoppingcart' %}">Add to cart</a>
+                        <button class="mt-15 mt-lg-0">X</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- wishlist Area Ends -->
+  <!-- Footer Area Starts -->
+  {% endblock %}
+  

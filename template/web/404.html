@@ -1,0 +1,63 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+
+  <!-- header area starts -->
+  
+  {% include 'includes/header.html' %}
+
+
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>404</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a href="{% url 'web:error' %}">404</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+  <!-- 404 Area Start -->
+  <div class="page-404-area pt-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="img-404 text-center">
+            <img src="{% static 'web/img/404/404.png' %}" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 404 Area Ends -->
+
+  <!-- Footer Area Starts -->
+ {% endblock %}

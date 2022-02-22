@@ -1,0 +1,247 @@
+{% extends 'web/base.html' %} 
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+  <!-- header area starts -->
+
+{% include 'includes/header.html' %}
+
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Blog</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:blog' %}">Blog</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+  <!-- Blog Left Sidebar Start -->
+  <div class="blog-area blog-ls pt-120">
+    <div class="container">
+      <div class="row ">
+        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-10">
+          <div class="sidebar-widget">
+            <div class="search position-relative">
+              <input type="text" placeholder="Search..">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="recent-post pt-55">
+              <div class="sidebar-title">
+                <h5>Recent Posts</h5>
+              </div>
+              <div class="post d-flex mt-25">
+                <div class="post-img">
+                  <img src="{% static 'web/img/blog/16.png' %}" alt="product">
+                </div>
+                <div class="post-details ml-20 mt-auto mb-auto">
+                  <h6>Latest Fashion Trend</h6>
+                  <span>Oct 06, 2021</span>
+                </div>
+              </div>
+              <div class="post d-flex mt-30">
+                <div class="post-img">
+                  <img src="{% static 'web/img/blog/17.png' %}" alt="product">
+                </div>
+                <div class="post-details ml-20 mt-auto mb-auto">
+                  <h6>Decorate your house</h6>
+                  <span>April 22, 2021</span>
+                </div>
+              </div>
+              <div class="post d-flex mt-30">
+                <div class="post-img">
+                  <img src="{% static 'web/img/blog/18.png' %}" alt="product">
+                </div>
+                <div class="post-details ml-20 mt-auto mb-auto">
+                  <h6>Interior Design explained</h6>
+                  <span>March 14, 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="categories mt-55">
+              <div class="sidebar-title">
+                <h5>Categories</h5>
+              </div>
+              <ul class="categories-list">
+                <li><a href="#"> Fashion<span>(9)</span></a></li>
+                <li><a href="#"> interior design <span>(09)</span></a></li>
+                <li><a href="#"> electronics<span>(07)</span></a></li>
+                <li><a href="#"> Uncategorized<span>(02)</span></a></li>
+                <li><a href="#"> shoes<span>(04)</span></a></li>
+                <li><a href="#"> House decors<span>(07)</span></a></li>
+              </ul>
+            </div>
+            <div class="tags mt-50">
+              <div class="sidebar-title">
+                <h5>Tags</h5>
+              </div>
+              <ul class="tag-list pt-20">
+                <li><a href="#">Interior</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decor</a></li>
+                <li><a href="#">Cooling System </a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Software</a></li>
+              </ul>
+            </div>
+            <div class="instagram mt-40">
+              <div class="sidebar-title">
+                <h5>Instagram</h5>
+              </div>
+              <ul class="instagram-list pt-20">
+                <li><a href="#"><img src="{% static 'web/img/instagram/13.png' %}" alt="img"></a></li>
+                <li><a href="#"><img src="{% static 'web/img/instagram/14.png' %}" alt="img"></a></li>
+                <li><a href="#"><img src="{% static 'web/img/instagram/15.png' %}" alt="img"></a></li>
+                <li><a href="#"><img src="{% static 'web/img/instagram/16.png' %}" alt="img"></a></li>
+                <li><a href="#"><img src="{% static 'web/img/instagram/17.png' %}" alt="img"></a></li>
+                <li><a href="#"><img src="{% static 'web/img/instagram/18.png' %}" alt="img"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-12 pl-0 pr-0 pt-35 pt-lg-0">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/7.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Nam ac elit a ante commodo Condimentum a vehicula tristique </a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30 ">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/8.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Sed up tomo amti lemos tareb karo
+                      tippu nima tiram khamu jan.</a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30 ">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/10.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Ami jemon cheyee commodo Condimentum a vehicula tristique </a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30 ">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/11.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Govir ek nodi dilamcommodo Condimentum a vehicula tristique</a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30 ">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/13.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Nam ac elit a ante commodo Condimentum a vehicula tristique</a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
+              <div class="news-items mb-30 ">
+                <div class="news-img">
+                  <a href="{% url 'web:shopdetalis' %}"><img src="{% static 'web/img/blog/14.png' %}" alt="img1"></a>
+                </div>
+                <span class="d-block pt-25">By Wpsmasher | Oct 15, 2021</span>
+                <div class="news-details pt-5">
+                  <div class="news-title">
+                    <a href="{% url 'web:news' %}">Nam ac elit a ante commodo Condimentum a vehicula tristique </a>
+                  </div>    
+                  <a class="slider-btn d-inline-block position-relative mt-10" href="{% url 'web:news' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <nav class="construction-pagination text-center mt-25" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Left Sidebar Ends -->
+  <!-- Footer Area Starts -->
+  {% endblock %}

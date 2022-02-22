@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+   {% load static %}
+  <meta charset="utf-8">
+
+  <!-- site title -->
+  <title>Aruk - Multipurpose Woocommerce Store</title>
+
+  <meta name="description" content="aruk - multipurpose ecommerce store, electronic shop, fashion store">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicons and shortcut icons -->
+  <link rel="apple-touch-icon" href="{% static 'web/icon.png' %}">
+  <link rel="shortcut icon" href="{% static 'web/favicon.ico' %}" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="{% static 'web/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/line-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/jquery.nice-number.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/mean-menu.css' %}">
+  <link rel="stylesheet" href="{% static 'web/css/default.css' %}">
+  <link rel="stylesheet" href="{% static 'web/style.css' %}">
+</head>
+
+<body>
+    <!-- scroll top button -->
+    <div id="scrollToTop" class="scrollTop" >
+      <i class="las la-arrow-up"></i>
+    </div>
+    {% block content %} 
+
+    {% endblock %} 
+
+      <!-- Footer Area Starts -->
+  <footer class="footer-area mt-115">
+    <div class="container">
+      <div class="footer-menu pt-120">
+        <div class="row">
+          <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget mb-30 mb-lg-0 pt-15">
+              <div class="logo pb-30">
+                <a href="{% url 'web:index' %}"><img src="{% static 'web/img/logo/logo.png' %}" alt="img"></a>
+              </div>
+              <div class="footer-info">
+                <ul>
+                  <li>Email: <span class="ml-5">aruk@gmail.com</span></li>
+                  <li>Phone:  <span class="ml-5">+948 256 347 968</span></li>
+                </ul>
+                <p class="pr-65">Subscribe to our newsleter and stay 
+                  up to date with latest offers and 
+                  upcoming trends.</p>
+                <div class="footer-input position-relative mt-30">
+                  <input type="email" placeholder="Email">
+                  <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget mb-30 mb-lg-0">
+              <h4>About Us</h4>
+              <ul class="footer-info pt-10">
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Our Outlets</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Sales and Retails</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Areas we serve</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Career at aruk</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:contact' %}">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Help and Support</h4>
+              <ul class="footer-info pt-10">
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Track my order</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Our top products</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:shoppingcart' %}">My cart</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Sign in</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:checkout' %}">Shipping Calculator</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6  pl-xl-0">
+            <div class="footer-widget">
+              <h4>Pages & Resources</h4>
+              <ul class="footer-info pt-10">
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">About Us</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:shopgrid' %}">Shop Page</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:shopgrid' %}">Category page</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:about' %}">Sign in page</a></li>
+                <li><a class="slider-btn position-relative d-inline-block" href="{% url 'web:error' %}">404 page</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 order-md-2 order-lg-1">
+            <div class="copyright mt-15">
+              <p>Copyright © 2020 | Designed by <a href="https://themeforest.net/user/wpsmasher"
+                  target="_blank">Wpsmasher</a></p>
+            </div>
+
+          </div>
+          <div class="col-xl-5 col-lg-3 col-md-12 order-md-1 order-lg-2">
+            <ul class="social-icon text-center mt-15">
+              <li><a href=""><i class="lab la-facebook-f"></i></a></li>
+              <li><a href=""><i class="lab la-twitter"></i></a></li>
+              <li><a href=""><i class="lab la-instagram"></i></a></li>
+              <li><a href=""><i class="lab la-vimeo"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 order-md-2 order-lg-3">
+            <div class="policy  text-right mt-15">
+              <a class="position-relative" href="#">Terms of Use </a>
+              <a class="ml-40" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Area Ends -->
+
+
+
+
+  <!-- scripts -->
+
+  <script src="{% static 'web/js/vendor/jquery.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/modernizr-3.11.2.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/bootstrap.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/popper.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/jquery-mean-menu.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/slick.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/isotope.min.js' %}"></script>
+  <script src="{% static 'web/js/vendor/jquery.nice-number.js' %}"></script>
+  <script src="{% static 'web/js/countdown.js' %}"></script>
+  <script src="{% static 'web/js/scripts.js' %}"></script>
+
+</body>
+
+</html>

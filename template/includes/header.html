@@ -1,0 +1,160 @@
+<!-- header area starts -->
+<header>
+  {% load static %}
+    <div class="header-1 pt-35 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-7 order-md-2 order-lg-1">
+            <div class="logo text-md-center text-lg-left">
+              <a href="{% url 'web:index' %}"><img src="{% static 'web/img/logo/logo.png' %}" alt="aruk-logo"></a>
+            </div>
+          </div>
+
+          <div class="col-xl-7 col-lg-7 col-md-3 order-md-1 offset-sm-2 offset-md-0 order-lg-2 col-sm-auto">
+            <nav>
+              <div id="mobile-menu" class="main-menu">
+                <ul>
+                  <li>
+                    <a href="{% url 'web:index' %}">Home</a>
+                    <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
+                      <li><a href="{% url 'web:index' %}">Home Style</a></li>
+                      <li><a href="{% url 'web:index_2' %}">Home Style 2</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="{% url 'web:shopgrid' %}">Shop</a>
+                    <ul class="sub-menu menu-level pb-10 pt-20 pl-15 pr-15">
+                      <li>
+                        <div>
+                          <h4>Shop Grid</h4>
+                          <ul class="sub-menu">
+
+                            <li><a href="{% url 'web:shopgrid' %}">Shop Grid</a></li>
+                            <li><a href="{% url 'web:shopgridleft' %}">Shop Grid LS</a></li>
+                            <li><a href="{% url 'web:shopgridright' %}"> Shop Grid RS</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <h4>Shop List</h4>
+                          <ul class="sub-menu pb-10 pl-15 pr-15">
+                            <li><a href="{% url 'web:shoplist' %}">Shop List</a></li>
+                            <li><a href="{% url 'web:shoplistleft' %}">Shop List LS</a></li>
+                            <li><a href="{% url 'web:shoplistright' %}">Shop List RS</a></li>
+
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <h4>Shop Details</h4>
+                          <ul class="sub-menu pb-10 pl-15 pr-15">
+                            <li><a href="{% url 'web:shopdetalis' %}">Shop Details</a></li>
+                            <li><a href="{% url 'web:shopdetalisleft' %}">Shop Details LS</a></li>
+                            <li><a href="{% url 'web:shopdetalisright' %}">Shop Details RS</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'web:shopgrid' %}">Collection</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
+                      <li><a href="{% url 'web:about' %}">About US</a></li>
+                      <li><a href="{% url 'web:wishlist' %}">My Wishlist</a></li>
+                      <li><a href="{% url 'web:shoppingcart' %}">Shopping Cart</a></li>
+                      <li><a href="{% url 'web:checkout' %}">Checkout</a></li>
+                      <li><a href="{% url 'web:news' %}">News Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'web:blog' %}">Blog</a>
+                    <ul class="sub-menu pb-10 pt-10 pl-15 pr-15">
+                      <li><a href="{% url 'web:blog' %}">Blog</a></li>
+                      <li><a href="{% url 'web:blogleft' %}">Blog LS</a></li>
+                      <li><a href="{% url 'web:blogright' %}">Blog RS</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'web:contact' %}">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 order-md-3 order-lg-3 ">
+            <div class="nav-icons">
+              <ul>
+                <li>
+                  <div class="search position-relative">
+                    <span ><i class="fas fa-search"></i></span>
+                    <div class="search-overlap">
+                    </div>
+                    <form action="#" class="search-form position-fixed">
+                      <div class="search-input ">
+                        <div class="search-close">
+                          <span>X</span>
+                        </div>
+                        <input type="text" placeholder="Enter your keywords.....">
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li><a href="{% url 'web:wishlist' %}"><i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-pink ">1</span>
+                  </a></li>{% url 'web:index' %}
+                <li class="position-relative"><span class="product-cart"><i class="fas fa-user"></i></span>
+
+                  <div class="product-on-sale pb-30">
+                    <div class="product-close-icon">
+                      <span>X</span>
+                    </div>
+                    <div class="product-wrapper d-flex">
+                      <div class="product-img position-relative ">
+                        <img src="{% static 'web/img/products/22.png' %}" alt="product">
+                        <div class="cart-icon">
+                          <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                        </div>
+                      </div>
+                      <div class="product-details mt-10">
+                        <span>Shoes</span>
+                        <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes{% url 'web:index' %}</a></h6>
+                        <div class="price d-flex">
+                          <span>$999</span>
+                          <del>$899</del>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-wrapper mt-20 d-flex">
+                      <div class="product-img position-relative">
+                        <img src="{% static 'web/img/products/23.png' %}" alt="product">
+                        <div class="cart-icon">
+                          <a href="{% url 'web:shoppingcart' %}"><i class="las la-cart-plus"></i></a>
+                        </div>
+                      </div>
+                      <div class="product-details mt-10">
+                        <span>Shoes</span>
+                        <h6><a href="{% url 'web:shopdetalis' %}">Leather Menz Shoes</a></h6>
+                        <div class="price d-flex">
+                          <span>$999</span>
+                          <del>$899</del>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-price pr-20 pt-30">
+                      <p>Subtotal: <span>$999.00</span></p>
+                      <p>Total: <span>$999.00</span></p>
+                    </div>
+                    <div class="cart-button mt-20 pl-15">
+                      <a  href="{% url 'web:shoppingcart' %}">View Cart</a>
+                      <a  href="{% url 'web:checkout'%}">Checkout</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu"></div>
+      </div>
+    </div>
+  </header>
+  <!-- header area ends -->

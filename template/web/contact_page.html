@@ -1,0 +1,140 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  <!-- =============Preloader Starts=============-->
+  <div class="loader">
+    <div class="face face-1">
+      <div class="circle"></div>
+    </div>
+    <div class="face face-2">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- =============Preloader Ends=============-->
+
+  <!-- header area starts -->
+ 
+  {% include 'includes/header.html' %}
+
+
+  <!-- header area ends -->
+  <!-- Page Title Area Start -->
+  <div class="page-title-area pt-150 pb-55">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="page-titel-detalis  ">
+            <div class="section-title">
+              <h2>Contact Us</h2>
+            </div>
+            <div class="page-bc">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                  <li class="breadcrumb-item position-relative active" aria-current="page"><a
+                      href="{% url 'web:about' %}">Contact Us</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title area Ends -->
+  <!-- Contact Area Start -->
+  <div class="contact_us pt-110">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+          <div class="contact-details">
+            <div class="contact-icon text-center">
+              <i class="fas fa-map"></i>
+            </div>
+            <ul class="contact-info text-center">
+              <li>221-B, Bakerstreet,</li>
+              <li>Scotland Yard, UK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+          <div class="contact-details mt-30 mb-30 mt-sm-0 mb-sm-0">
+            <div class="contact-icon text-center">
+              <i class="fas fa-phone"></i>
+            </div>
+            <ul class="contact-info text-center">
+              <li>+44 01569 2358</li>
+              <li>+44 04258 3211</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+          <div class="contact-details">
+            <div class="contact-icon text-center">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <ul class="contact-info text-center">
+              <li>info@aruk.com</li>
+              <li>admin@aruk.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Area Ends -->
+  <!-- Map Area Start -->
+  <div class="map-area pt-115">
+    <div class="container">
+      <div id="map-container-googl" class="map-container ">
+        <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          style="border:0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Map ARea Ends -->
+  <div class="contact-form-area pt-95">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-9 col-md-10">
+          <div class="contact-title text-center">
+            <h3>Get In Touch With Us </h3>
+            <p>Quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            </p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form pt-25 text-center" action="#">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="contact-input">
+              <input type="text" placeholder="Enter your name">
+            </div>
+
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="contact-input mt-15 mb-15 mt-sm-0 mb-sm-0">
+              <input type="text" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="contact-input">
+              <input type="text" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+           <div class="contact-input mt-30">
+            <textarea  cols="30" rows="10" placeholder="Your message here"></textarea>
+           </div>
+          </div>
+        </div>
+        <button class="p-btn border-0 mt-75">Send To US</button>
+      </form>
+    </div>
+  </div>
+  <!-- Footer Area Starts -->
+ {% endblock %}

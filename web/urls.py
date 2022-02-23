@@ -5,7 +5,7 @@ app_name = 'web'
 
 urlpatterns = [
     path('', views.index,name="index"),
-    path('index-2/', views.index,name="index_2"),
+    path('index-2/', views.index_2,name="index_2"),
     path('about/', views.about,name="about"),
     path('blog/', views.blog,name="blog"),
     path('blog-right/', views.blogright,name="blogright"),

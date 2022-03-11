@@ -46,34 +46,35 @@
   <!-- Page Title area Ends -->
 
   <!-- new arrival area starts -->
+  {% for p in products %}
   <div class="shop-details pt-120 ">
     <div class="container">
       <div class="row">
         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-12">
           <div class="nav nav-tabs " id="approach-tabs" role="tablist">
             <a class="product-thumb mb-15 active" id="nav-thumb1" data-toggle="tab" href="#nav-product1" role="tab"
-              aria-controls="nav-product1" aria-selected="true"><img src="{% static 'web/img/products/24.png' %}" alt="img"></a>
+              aria-controls="nav-product1" aria-selected="true"><img src="{{ p.photo.crop.70x90 }}" alt="img"></a>
             <a class="product-thumb mb-15" id="nav-thum2" data-toggle="tab" href="#nav-product2" role="tab"
-              aria-controls="nav-product2" aria-selected="false"><img src="{% static 'web/img/products/25.png' %}" alt="img"></a>
+              aria-controls="nav-product2" aria-selected="false"><img src="{{ p.photo.crop.70x90 }}" alt="img"></a>
             <a class="product-thumb" id="nav-thumb3" data-toggle="tab" href="#nav-product3" role="tab"
-              aria-controls="nav-product3" aria-selected="false"><img src="{% static 'web/img/products/26.png' %}" alt="img"></a>
+              aria-controls="nav-product3" aria-selected="false"><img src="{{ p.photo.crop.70x90 }}" alt="img"></a>
           </div>
         </div>
         <div class="col-xl-11 col-lg-11 col-md-10 col-sm-12">
           <div class="product-wrapper d-flex">
             <div class="product-imges tab-content" id="nav-tabContents">
               <div class="tab-pane product-img  active " id="nav-product1" role="tabpanel" aria-labelledby="nav-thumb1">
-                <img src="{% static 'web/img/products/27.png' %}" alt="img">
+                <img src="{{ p.photo.crop.350x469 }}" alt="img">
               </div>
-              <div class="tab-pane product-img " id="nav-product2" role="tabpanel" aria-labelledby="nav-thum2">
-                <img src="{% static 'web/img/products/32.png' %}" alt="img">
+              <!-- <div class="tab-pane product-img " id="nav-product2" role="tabpanel" aria-labelledby="nav-thum2">
+                <img src="{{ p.photo.crop.350x469 }}" alt="img">
               </div>
               <div class="tab-pane product-img" id="nav-product3" role="tabpanel" aria-labelledby="nav-thumb3">
-                <img src="{% static 'web/img/products/33.png' %}" alt="img">
-              </div>
+                <img src="{{ p.photo.crop.350x469 }}" alt="img">
+              </div> -->
             </div>
             <div class="product-details ml-50">
-              <h5>Yellow Bag Women 2018</h5>
+              <h5>{{p.title}}</h5>
               <ul class="rating d-inline-block mr-20">
                 <li><i class="las la-star"></i></li>
                 <li><i class="las la-star"></i></li>
@@ -83,11 +84,9 @@
               </ul>
               <span>03 Customer Review</span>
               <div class="price pt-15 pb-10">
-                <span>$42.00</span>
+                <span>{{p.price}}</span>
               </div>
-              <p class="pr-110">Sed id interdum urna. Nam ac elit a ante commodo tristique. tum vehicula a hendrerit ac
-                nisi. hendrerit
-                ac nisi Lorem ipsum dolor sit perdiet nibh vel magna lacinia ultrices. Sed id interdum urna.</p>
+              <p class="pr-110">{{p.description}}</p>
               <div class="product-color pt-10 d-flex">
                 <h6>SELECT COLOR</h6>
                 <div class="color-code pl-20">
@@ -127,14 +126,12 @@
               </ul>
             </div>
           </div>
-
-        </div>
-        
+        </div>  
       </div>
       <hr class="pt-75">
     </div>
   </div>
-  
+  {% endfor %}
   <div class="description-area pt-65">
     <div class="container">
         <div class="row">

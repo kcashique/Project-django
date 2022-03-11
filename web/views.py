@@ -1,5 +1,7 @@
+from itertools import product
 from django.shortcuts import render
 from django.http import HttpResponse
+from web.models import Product
 
 
 def index(request):
@@ -88,6 +90,7 @@ def shopright(request):
 
 def shopdetalis(request):
     context = {
+        "products": Product.objects.all(),
         "is_shopdetalis" : True
     }
     return render(request, 'web/shop_detalis.html',context)
@@ -123,6 +126,8 @@ def shopgridright(request):
 
 def shopgrid(request):
     context = {
+        "products": Product.objects.all(),
+        "title" :"ashique",
         "is_shopgrid" : True
     }
     return render(request, 'web/shop_grid.html',context)

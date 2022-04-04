@@ -1,5 +1,4 @@
-from pyexpat import model
-from turtle import title
+from email.mime import image
 from django.db import models
 from versatileimagefield.fields import VersatileImageField
 
@@ -12,6 +11,7 @@ SIZE_CHOICES = (
 )
 class Category(models.Model):
     title = models.CharField(max_length=200)
+    image =  VersatileImageField(blank=True, null=True)
     slug = models.SlugField(max_length=200,blank=True,null=True,unique=True)
     class Meta:
         ordering = ("-title","id")
@@ -36,13 +36,17 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     mrp = models.DecimalField(max_digits=5, decimal_places=2)
     stock = models.IntegerField()
-    description = models.TextField(blank=True,null=True)
-    meta_description = models.TextField(blank=True,null=True)
+    description = models.TextField(blank=True, null=True)
+    meta_description = models.TextField(blank=True, null=True)
+    additional_info = models.TextField(blank=True, null=True )
 
     class Meta:
         ordering = ("-title","id")
     def __str__(self):
-        return f"{self.title}"
+        return f"{self.title}" 
+
+    def get_price(self):
+        return f"&#8377; {self.price}"
 
 # class Customer(models.Model):
 #     first_name = models.CharField(max_length=200)

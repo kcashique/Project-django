@@ -52,7 +52,7 @@
         <div class="toolbar-navi d-inline-block ">
           <div class="toolbar d-flex">
             <div class="sort-by  d-flex mr-30">
-              <span class="mr-10 mt-5">{{title}} :</span>
+              <span class="mr-10 mt-5"> Sort by :</span>
               <div class="sort-by-option option-list position-relative">
                 <button id="sort-option" class="option-dropdown">Most Recent <i class="fas fa-caret-down"></i></button>
 
@@ -130,7 +130,7 @@
                   <li><i class="las la-star"></i></li>
                 </ul>
                 <div class="price">
-                  <span>{{p.price}}</span>
+                  <span>{{ p.get_price|safe }}</span>
                 </div>
                 <div class="buy-info">
                   <a class="slider-btn add-btn float-left position-relative" href="{% url 'web:shoppingcart' %}">Add To Cart</a>

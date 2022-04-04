@@ -16,6 +16,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'colorfield',
     'versatileimagefield',
     'django.contrib.admin',
     'django.contrib.auth',

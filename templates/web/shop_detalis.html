@@ -19,7 +19,7 @@
  
   {% include 'includes/header.html' %}
 
-  <!-- header area ends -->{% url 'web:index' %}
+  <!-- header area ends -->
   <!-- Page Title Area Start -->
   <div class="page-title-area pt-150 pb-55">
     <div class="container">
@@ -84,9 +84,9 @@
               </ul>
               <span>03 Customer Review</span>
               <div class="price pt-15 pb-10">
-                <span>{{p.price}}</span>
+                <span>{{ p.get_price|safe }}</span>
               </div>
-              <p class="pr-110">{{p.description}}</p>
+              <p class="pr-110">{{ p.meta_description }}</p>
               <div class="product-color pt-10 d-flex">
                 <h6>SELECT COLOR</h6>
                 <div class="color-code pl-20">
@@ -131,7 +131,6 @@
       <hr class="pt-75">
     </div>
   </div>
-  {% endfor %}
   <div class="description-area pt-65">
     <div class="container">
         <div class="row">
@@ -149,12 +148,11 @@
                         <div class="row">
                           <div class="col-xl-8 col-lg-8 col-md-8">
                             <div class="description-text position-relative">
-                              <p class="mb-25">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestib lum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna</p>
-                              <p>Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus plac erat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condim entum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet.</p>
+                              <p class="mb-25">{{p.description}}</p>
                             </div>
                           </div>
                           <div class="col-xl-4 col-lg-4 col-md-4 pl-md-0 pr-md-0">
-                            <div class="description-size pt-5">
+                            <div class="description-sizweb_product.additional_infoe pt-5">
                               <h6>SIZE & FIT</h6>
                               <ul>
                                 <li>Our Model wears a UK 8/ EU 36/ Us 4</li>
@@ -169,9 +167,7 @@
                         <div class="row">
                           <div class="col-xl-8 col-lg-8 col-md-8">
                             <div class="description-text position-relative">
-                              <p class="mb-25">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestib lum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna</p>
-                              <p>Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus plac erat tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus sed dolor eget posuere.Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condim entum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet.</p>
-                            </div>
+                              <p class="mb-25">{{ p.additional_info }}</div>
                           </div>
                           <div class="col-xl-4 col-lg-4 col-md-4 pl-md-0 pr-md-0">
                             <div class="description-size pt-5">
@@ -211,6 +207,7 @@
         </div>
     </div>
 </div>
+{% endfor %}
 
   <!-- new arrival area ends -->
 
